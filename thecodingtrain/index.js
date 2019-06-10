@@ -13,9 +13,6 @@
 let vals = [4, 8, 1, 2, 9];
 console.log(vals);
 
-function doubler(x) {
-  return x * 2;
-}
+const doubled = vals.map(x => x * 2);
 
-const doubled = vals.map(doubler);
 console.log(doubled);
