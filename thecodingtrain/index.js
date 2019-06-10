@@ -1,8 +1,6 @@
-function multiplier(factor) {
-  return function(x) {
-    return x * factor;
-  };
-}
+const multiplier = factor => {
+  return x => x * factor;
+};
 
 const doubler = multiplier(2);
 const tripler = multiplier(3);
