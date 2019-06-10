@@ -1,12 +1,11 @@
-function sing(callback) {
-  if(callback){
-  console.log('la la la la');
-  callback();
-  }
+function multiplier(factor) {
+  return function(x) {
+    return x * factor;
+  };
 }
 
-function meow() {
-  console.log('meow meow');
-}
+const doubler = multiplier(2);
+const tripler = multiplier(3);
 
-sing();
+console.log(doubler(4));
+console.log(tripler(4));
