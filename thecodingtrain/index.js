@@ -34,6 +34,21 @@ function sum(acc, val) {
 (acc, val) => acc + val;
 
 let result = vals.reduce((acc, val) => acc + val, 0);
-console.log(result);
+// console.log(result);
 
+function findMax(acc, val) {
+  if (val > acc) {
+    acc = val;
+  }
+  return acc;
+}
 
+(acc, val) => {
+  if (val > acc) {
+    acc = val;
+  }
+  return acc;
+};
+
+let biggest = vals.reduce((a, b) => (b > a ? b : a));
+console.log(biggest);
