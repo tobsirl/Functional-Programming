@@ -6,3 +6,4 @@ Higher Order Functions - Map - Filter - Reduce
 
 ## James Sinclair
 ### [A Gentle Introduction To Functional JavaScript: part 1](https://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-intro/)
+### [A Gentle Introduction To Functional JavaScript: part 2](https://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-arrays/)
