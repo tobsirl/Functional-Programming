@@ -28,3 +28,16 @@ var colours = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
 for (var i = 0; i < colours.length; i = i + 1) {
   addColour(colours[i]);
 }
+
+// This code is perfectly fine. It gets the job done, and it is less repetitive than the previous 
+// version. But it’s not particularly expressive. We have to give the computer very specific instructions
+// about creating an index variable and incrementing it, and checking to see if it’s time to stop. 
+// What if we could wrap all that for-loop stuff into a function?
+
+// !For-Each
+// Since JavaScript lets us pass a function as a parameter to another function, writing a forEach function is relatively straightforward:
+function forEach(callback, array) {
+  for (var i = 0; i < array.length; i = i + 1) {
+      callback(array[i], i);
+  }
+}
