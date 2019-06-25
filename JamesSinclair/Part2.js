@@ -84,3 +84,13 @@ var getElement = function(id) {
 };
 
 var elements = map(getElement, ids);
+
+// The map function takes small, trivial functions and and turns them into super-hero functions—it multiplies the function’s effectiveness by applying
+// it to an entire array with just one call.
+
+// Like forEach, map is so handy that modern implementations have it as a built-in method for array objects. You can call the built-in method like this:
+var ids = ['unicorn', 'fairy', 'kitten'];
+var getElement = function(id) {
+  return document.getElementById(id);
+};
+var elements = ids.map(getElement);
