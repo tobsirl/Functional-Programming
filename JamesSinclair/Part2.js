@@ -77,3 +77,10 @@ var map = function(callback, array) {
   }
   return newArray;
 };
+
+// Now we have our shiny new map function, we can use it like so:
+var getElement = function(id) {
+  return document.getElementById(id);
+};
+
+var elements = map(getElement, ids);
