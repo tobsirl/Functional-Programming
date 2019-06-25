@@ -41,3 +41,18 @@ function forEach(callback, array) {
       callback(array[i], i);
   }
 }
+
+// This function takes another function, callback, as a parameter and calls it on every item in the array.
+
+// Now, with our example, we want to run the addColour function on each item in the array. Using our new 
+// forEach function we can express that intent in just one line:
+
+forEach(addColour, colours);
+
+// Calling a function on every item in an array is such a useful tool that modern implementations of JavaScript
+// include it as a built in method on arrays. So instead of using our own forEach function, we could use the built in one like so:
+var colours = [
+  'red', 'orange', 'yellow',
+  'green', 'blue', 'purple'
+];
+colours.forEach(addColour);
