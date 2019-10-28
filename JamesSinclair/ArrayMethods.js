@@ -18,7 +18,20 @@ function isHulk(hero) {
   return hero.name === 'Hulk';
 }
 
-const hulk = heroes.find(isHulk); 
+const hulk = heroes.find(isHulk);
+
+console.log(hulk);
+
+//* .map()
+function doubleStrength(hero) {
+  return hero.strength * 2;
+}
+
+const strength2x = heroes.map(doubleStrength);
+
+console.log(strength2x);
+
+//* map + filter combo
 
 const result = heroes
   .map(hero => {
@@ -28,4 +41,4 @@ const result = heroes
     return name.name === 'Hulk';
   });
 
-console.log(hulk);
+console.log(result);
