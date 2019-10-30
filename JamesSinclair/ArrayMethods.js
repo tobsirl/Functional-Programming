@@ -42,8 +42,17 @@ const tuff = heroes.filter(strong);
 
 console.log(tuff);
 
-//* map + filter combo
+//* .concat()
+const extras = [
+  { name: 'Cyclops', strength: 136 },
+  { name: 'Gambit', strength: 136 }
+];
 
+const more = heroes.concat(extras);
+
+console.log(more);
+
+//* map + filter combo
 const result = heroes
   .map(hero => {
     return { name: hero.name, strength: hero.strength };
