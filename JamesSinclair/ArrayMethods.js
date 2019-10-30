@@ -29,7 +29,18 @@ function doubleStrength(hero) {
 
 const strength2x = heroes.map(doubleStrength);
 
+console.log(heroes);
+
 console.log(strength2x);
+
+//* .filter()
+function strong(hero) {
+  return hero.strength >= 200;
+}
+
+const tuff = heroes.filter(strong);
+
+console.log(tuff);
 
 //* map + filter combo
 
