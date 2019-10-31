@@ -52,6 +52,15 @@ const more = heroes.concat(extras);
 
 console.log(more);
 
+//* .flatMap()
+function space(hero, i) {
+  return i > 0 && i % 5 === 0 ? ['<hr/>', hero.name] : [hero.name];
+}
+
+const list = heroes.flatMap(space);
+
+console.log(list);
+
 //* map + filter combo
 const result = heroes
   .map(hero => {
