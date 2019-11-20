@@ -61,6 +61,15 @@ const list = heroes.flatMap(space);
 
 console.log(list);
 
+//* .join()
+function getName(hero) {
+  return hero.name;
+}
+
+const join = heroes.map(getName).join('\n');
+
+console.log(join);
+
 //* map + filter combo
 const result = heroes
   .map(hero => {
