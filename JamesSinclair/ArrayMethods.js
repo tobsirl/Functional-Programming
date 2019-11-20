@@ -84,14 +84,23 @@ function strength60(hero) {
   return hero.strength === 60;
 }
 
-const find60 = heroes.some(strength60)
+const find60 = heroes.some(strength60);
 
 console.log(find60);
 
 //* .includes()
-const hulkIn = heroes.map(getName).includes('Hulk')
+const hulkIn = heroes.map(getName).includes('Hulk');
 
 console.log(hulkIn);
+
+//* .reduce()
+function sumStrength(total, hero) {
+  return total + hero.strength;
+}
+
+const totalStrength = heroes.reduce(sumStrength, 0);
+
+console.log(totalStrength);
 
 //* map + filter combo
 const result = heroes
