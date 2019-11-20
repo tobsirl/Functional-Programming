@@ -102,6 +102,13 @@ const totalStrength = heroes.reduce(sumStrength, 0);
 
 console.log(totalStrength);
 
+//* .forEach()
+function logHero(hero) {
+  console.log(`Name: ${hero.name} Strength: ${hero.strength}`);
+}
+
+heroes.forEach(logHero);
+
 //* map + filter combo
 const result = heroes
   .map(hero => {
