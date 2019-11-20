@@ -70,6 +70,15 @@ const join = heroes.map(getName).join('\n');
 
 console.log(join);
 
+//* .every()
+function strong(hero) {
+  return hero.strength >= 200;
+}
+
+const tuffguys = heroes.every(strong);
+
+console.log(tuffguys);
+
 //* map + filter combo
 const result = heroes
   .map(hero => {
