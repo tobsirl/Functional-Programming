@@ -79,6 +79,15 @@ const tuffguys = heroes.every(strong);
 
 console.log(tuffguys);
 
+//* .some()
+function strength60(hero) {
+  return hero.strength === 60;
+}
+
+const find60 = heroes.some(strength60)
+
+console.log(find60);
+
 //* map + filter combo
 const result = heroes
   .map(hero => {
