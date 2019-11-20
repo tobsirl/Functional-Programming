@@ -88,6 +88,11 @@ const find60 = heroes.some(strength60)
 
 console.log(find60);
 
+//* .includes()
+const hulkIn = heroes.map(getName).includes('Hulk')
+
+console.log(hulkIn);
+
 //* map + filter combo
 const result = heroes
   .map(hero => {
