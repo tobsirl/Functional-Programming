@@ -32,7 +32,7 @@ var heights = images.map(image => image.height);
 
 console.log(heights);
 
-// Coding Exercise 1 - Calculating Values with Map
+// Coding Exercise 2 - Calculating Values with Map
 var trips = [
   { distance: 34, time: 10 },
   { distance: 90, time: 50 },
@@ -42,3 +42,12 @@ var trips = [
 var speeds = trips.map(trip => trip.distance / trip.time);
 
 console.log(speeds);
+
+// Coding Exercise 3 - Really Hard - Implementing Pluck
+let paints = [{ color: 'red' }, { color: 'blue' }, { color: 'yellow' }];
+
+function pluck(array, property) {
+  return array.map(color => color[property]);
+}
+
+console.log(pluck(paints, 'color'));
