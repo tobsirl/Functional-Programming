@@ -20,3 +20,14 @@ const cars = [
 const prices = cars.map(car => car.price);
 
 console.log(prices);
+
+// Coding Exercise 1 - Plucking Values
+var images = [
+  { height: '34px', width: '39px' },
+  { height: '54px', width: '19px' },
+  { height: '83px', width: '75px' }
+];
+
+var heights = images.map(image => image.height);
+
+console.log(heights);
