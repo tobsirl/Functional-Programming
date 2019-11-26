@@ -7,9 +7,15 @@ const products = [
 
 const filteredProducts = [];
 
-for (let i = 0; i < products.length; i++) {
-  if (products[i].type === 'fruit') {
-    filteredProducts.push(products[i]);
+// for (let i = 0; i < products.length; i++) {
+//   if (products[i].type === 'fruit') {
+//     filteredProducts.push(products[i]);
+//   }
+// }
+
+for (fruit of products) {
+  if (fruit.type === 'fruit') {
+    filteredProducts.push(fruit);
   }
 }
 
