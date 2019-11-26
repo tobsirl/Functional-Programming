@@ -5,6 +5,16 @@ const products = [
   { name: 'orange', type: 'fruit' }
 ];
 
+const filteredProducts = [];
+
+for (let i = 0; i < products.length; i++) {
+  if (products[i].type === 'fruit') {
+    filteredProducts.push(products[i]);
+  }
+}
+
+console.log(filteredProducts);
+
 const fruits = products.filter(fruit => fruit.type === 'fruit');
 
 console.log(fruits);
