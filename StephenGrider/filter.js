@@ -66,3 +66,16 @@ const users = [
 const filteredUsers = users.filter(user => user.admin === true);
 
 console.log(filteredUsers);
+
+// Coding Exercise 3 - Challenging! Implementing 'reject'
+function reject(array, iteratorFunction) {
+  return array.filter(el => !iteratorFunction(el));
+}
+
+const nums = [10, 20, 30];
+
+function greaterThanTen(number) {
+  return number > 25;
+}
+
+console.log(reject(nums, greaterThanTen));
