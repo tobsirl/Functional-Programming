@@ -53,3 +53,16 @@ const numbers = [15, 25, 35, 45, 55, 65, 75, 85, 95];
 const filteredNumbers = numbers.filter(num => num >= 50);
 
 console.log(filteredNumbers);
+
+// Coding Exercise 2 - Handling Permissions with Filter
+const users = [
+  { id: 1, admin: true },
+  { id: 2, admin: false },
+  { id: 3, admin: false },
+  { id: 4, admin: false },
+  { id: 5, admin: true }
+];
+
+const filteredUsers = users.filter(user => user.admin === true);
+
+console.log(filteredUsers);
