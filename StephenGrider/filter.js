@@ -46,3 +46,10 @@ const commentsForPost = (post, comments) => {
 };
 
 console.log(commentsForPost(post, comments));
+
+// Coding Exercise 1 - Filtering Values
+const numbers = [15, 25, 35, 45, 55, 65, 75, 85, 95];
+
+const filteredNumbers = numbers.filter(num => num >= 50);
+
+console.log(filteredNumbers);
