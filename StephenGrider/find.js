@@ -22,3 +22,15 @@ console.log(user);
 const findAlex = users.find(user => user.name === 'Alex');
 
 console.log(findAlex);
+
+// find only returns the first record that matches the find case
+
+function Car(model) {
+  this.model = model;
+}
+
+const cars = [new Car('Buick'), new Car('Camaro'), new Car('Focus')];
+
+const findFocus = cars.find(car => car.model === 'Focus');
+
+console.log(findFocus);
