@@ -17,3 +17,8 @@ for (let i = 0; i < users.length; i++) {
 }
 
 console.log(user);
+
+// Example using find()
+const findAlex = users.find(user => user.name === 'Alex');
+
+console.log(findAlex);
