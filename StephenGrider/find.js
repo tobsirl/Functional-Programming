@@ -34,3 +34,16 @@ const cars = [new Car('Buick'), new Car('Camaro'), new Car('Focus')];
 const findFocus = cars.find(car => car.model === 'Focus');
 
 console.log(findFocus);
+
+const posts = [
+  { id: 1, title: 'New Post' },
+  { id: 2, title: 'Old Post' }
+];
+
+const comment = { postId: 1, content: 'Great Post' };
+
+function postForComment(posts, comment) {
+  return posts.find(post => post.id === comment.postId);
+}
+
+console.log(postForComment(posts, comment));
