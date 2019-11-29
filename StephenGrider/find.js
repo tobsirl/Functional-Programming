@@ -58,3 +58,10 @@ const usersData = [
 const admin = usersData.find(user => user.admin === true);
 
 console.log(admin);
+
+// Coding Exercise 2 - What's Your Balance?
+const accounts = [{ balance: -10 }, { balance: 12 }, { balance: 0 }];
+
+const account = accounts.find(account => account.balance === 12);
+
+console.log(account);
