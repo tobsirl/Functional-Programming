@@ -65,3 +65,20 @@ const accounts = [{ balance: -10 }, { balance: 12 }, { balance: 0 }];
 const account = accounts.find(account => account.balance === 12);
 
 console.log(account);
+
+// Coding Exercise 3 - Custom findWhere Helper
+const ladders = [
+  { id: 1, height: 20 },
+  { id: 3, height: 25 }
+];
+
+function findWhere(array, criteria) {
+  // let prop = criteria.height.split(' ')[0];
+  let prop = Object.keys(criteria)[0];
+ 
+  return array.find(el => el[prop] === criteria[prop]); 
+}
+
+findWhere(ladders, { height: '25 feet' });
+
+console.log(findWhere(ladders, { height: '25 feet' }));
