@@ -47,3 +47,14 @@ function postForComment(posts, comment) {
 }
 
 console.log(postForComment(posts, comment));
+
+// Coding Exercise 1 - Finding Admin Users
+const usersData = [
+  { id: 1, admin: false },
+  { id: 2, admin: false },
+  { id: 3, admin: true }
+];
+
+const admin = usersData.find(user => user.admin === true);
+
+console.log(admin);
