@@ -17,5 +17,7 @@ for (let i = 0; i < computers.length; i++) {
   }
 }
 
-allComputersCanRunProgram
-onlySomeComputersCanRunProgram
+allComputersCanRunProgram;
+onlySomeComputersCanRunProgram;
+
+computers.every(computer => computer.ram > 16); 
