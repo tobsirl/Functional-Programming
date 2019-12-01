@@ -22,4 +22,10 @@ onlySomeComputersCanRunProgram;
 
 computers.every(computer => computer.ram > 16);
 
-computers.some(computer => computer.ram > 16); 
+computers.some(computer => computer.ram > 16);
+
+const names = ['Alexandria', 'Matthew', 'Joe'];
+
+names.every(name => name.length > 4); 
+
+names.some(name => name.length > 4); 
