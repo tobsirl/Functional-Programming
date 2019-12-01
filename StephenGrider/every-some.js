@@ -20,4 +20,6 @@ for (let i = 0; i < computers.length; i++) {
 allComputersCanRunProgram;
 onlySomeComputersCanRunProgram;
 
-computers.every(computer => computer.ram > 16); 
+computers.every(computer => computer.ram > 16);
+
+computers.some(computer => computer.ram > 16); 
