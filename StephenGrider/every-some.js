@@ -59,7 +59,7 @@ const formIsValid = fields.every(field => field.validate());
 
 formIsValid;
 
-// Coding Exercise 1 - Finging Submitted Users
+// Coding Exercise 1 - Finding Submitted Users
 const users = [
   { id: 21, hasSubmitted: true },
   { id: 62, hasSubmitted: false },
@@ -68,4 +68,15 @@ const users = [
 
 const hasSubmitted = users.every(user => user.hasSubmitted === true);
 
-hasSubmitted
+hasSubmitted;
+
+// Coding Exercise 2 - In Progress Network Requests
+const requests = [
+  { url: '/photos', status: 'complete' },
+  { url: '/albums', status: 'pending' },
+  { url: '/users', status: 'failed' }
+];
+
+const inProgress = requests.some(request => request.status === 'pending');
+
+inProgress
