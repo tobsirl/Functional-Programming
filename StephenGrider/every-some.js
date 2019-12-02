@@ -47,8 +47,14 @@ class Field {
   }
 }
 
-const username = new Field('2cool');
+const username = new Field('Bill');
 const password = new Field('my_password');
 const birthDate = new Field('10/10/2020');
 
-username.validate() && password.validate() && birthDate.validate(); 
+username.validate() && password.validate() && birthDate.validate();
+
+const fields = [username, password, birthDate];
+
+const formIsValid = fields.every(field => field.validate());
+
+formIsValid
