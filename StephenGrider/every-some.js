@@ -49,5 +49,6 @@ class Field {
 
 const username = new Field('2cool');
 const password = new Field('my_password');
+const birthDate = new Field('10/10/2020');
 
-username.validate();
+username.validate() && password.validate() && birthDate.validate(); 
