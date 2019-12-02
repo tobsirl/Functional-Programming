@@ -57,4 +57,15 @@ const fields = [username, password, birthDate];
 
 const formIsValid = fields.every(field => field.validate());
 
-formIsValid
+formIsValid;
+
+// Coding Exercise 1 - Finging Submitted Users
+const users = [
+  { id: 21, hasSubmitted: true },
+  { id: 62, hasSubmitted: false },
+  { id: 4, hasSubmitted: true }
+];
+
+const hasSubmitted = users.every(user => user.hasSubmitted === true);
+
+hasSubmitted
