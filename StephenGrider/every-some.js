@@ -26,6 +26,28 @@ computers.some(computer => computer.ram > 16);
 
 const names = ['Alexandria', 'Matthew', 'Joe'];
 
-names.every(name => name.length > 4); 
+names.every(name => name.length > 4);
 
-names.some(name => name.length > 4); 
+names.some(name => name.length > 4);
+
+function FieldOld() {
+  this.valueOld = valueOld;
+}
+
+FieldOld.prototype.validateOld = function() {
+  return this.valueOld.length > 0;
+};
+
+class Field {
+  constructor(value) {
+    this.value = value;
+  }
+  validate() {
+    return this.value.length > 0;
+  }
+}
+
+const username = new Field('2cool');
+const password = new Field('my_password');
+
+username.validate();
