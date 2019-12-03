@@ -36,3 +36,10 @@ function balancedParens(string) {
 }
 
 balancedParens(')('); //?
+
+// Coding Exercise 1 - Distance Traveled
+const trips = [{ distance: 34 }, { distance: 12 }, { distance: 1 }];
+
+const totalDistance = trips.reduce((prev, trip) => prev + trip.distance, 0);
+
+totalDistance;
