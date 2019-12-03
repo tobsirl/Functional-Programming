@@ -7,4 +7,6 @@ for (let i = 0; i < numbers.length; i++) {
   sum += numbers[i];
 }
 
-sum
+sum;
+
+numbers.reduce((sum, number) => sum + number, 0); 
