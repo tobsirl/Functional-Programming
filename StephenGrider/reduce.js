@@ -9,4 +9,18 @@ for (let i = 0; i < numbers.length; i++) {
 
 sum;
 
-numbers.reduce((sum, number) => sum + number, 0); 
+numbers.reduce((sum, number) => sum + number, 0);
+
+// --------------------------------------------------------------
+const primaryColors = [
+  { color: 'red' },
+  { color: 'yellow' },
+  { color: 'blue' }
+];
+
+const colorList = primaryColors.reduce((previous, primaryColor) => {
+  previous.push(primaryColor.color);
+  return previous;
+}, []);
+
+colorList;
