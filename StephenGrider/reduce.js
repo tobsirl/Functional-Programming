@@ -43,3 +43,25 @@ const trips = [{ distance: 34 }, { distance: 12 }, { distance: 1 }];
 const totalDistance = trips.reduce((prev, trip) => prev + trip.distance, 0);
 
 totalDistance;
+
+// Coding Exercise 1 - Reducing Properties
+const desks = [
+  { type: 'sitting' },
+  { type: 'standing' },
+  { type: 'sitting' },
+  { type: 'sitting' },
+  { type: 'standing' }
+];
+
+const deskTypes = desks.reduce(
+  (acc, desk) => {
+    if (desk.type === 'sitting') acc.sitting++;
+
+    if (desk.type === 'standing') acc.standing++;
+
+    return acc;
+  },
+  { sitting: 0, standing: 0 }
+);
+
+deskTypes;
