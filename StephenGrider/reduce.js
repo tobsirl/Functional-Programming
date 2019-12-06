@@ -44,7 +44,7 @@ const totalDistance = trips.reduce((prev, trip) => prev + trip.distance, 0);
 
 totalDistance;
 
-// Coding Exercise 1 - Reducing Properties
+// Coding Exercise 2 - Reducing Properties
 const desks = [
   { type: 'sitting' },
   { type: 'standing' },
@@ -65,3 +65,22 @@ const deskTypes = desks.reduce(
 );
 
 deskTypes;
+
+// Coding Exercise 2 - Unique
+const numbs = [1, 1, 2, 3, 4, 4];
+
+numbs.reduce((unique, item) => unique.includes(item) ? unique : [...unique, item], []) //?
+
+const unique = numbs =>
+  numbs.reduce((acc, curr) => (acc.includes(curr) ? acc : [...acc, curr]), []);
+
+unique; //?
+
+console.log(unique);
+
+function unique(array) {
+  return array.reduce((acc, curr) => {
+      acc.find((el) => el[acc] === el[curr])
+  },[])
+
+}
