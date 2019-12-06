@@ -21,4 +21,9 @@ function count(targetString) {
   return number;
 }
 
-count('aeiobzxceiaipbiox') //?
+count('aeiobzxceiaipbiox'); //?
+
+// Coding Exercise 1 - A Constant Exercise of Letting Variables Be Variables
+const name1 = 'Jake';
+let age = 23;
+const dateOfBirth = '10/4/79';
