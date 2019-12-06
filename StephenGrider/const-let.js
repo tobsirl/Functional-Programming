@@ -27,3 +27,18 @@ count('aeiobzxceiaipbiox'); //?
 const name1 = 'Jake';
 let age = 23;
 const dateOfBirth = '10/4/79';
+
+// Coding Exercise 2 - Const/Let Refactoring
+const statuses = [ 
+  { code: 'OK', response: 'Request successful' },
+  { code: 'FAILED', response: 'There was an error with your request' },
+  { code: 'PENDING', response: 'Your reqeust is still pending' }
+];
+let message = '';
+let currentCode = 'OK';
+
+for (let i = 0; i < statuses.length; i++) {
+  if (statuses[i].code === currentCode) {
+    message = statuses[i].response;
+  }
+}
