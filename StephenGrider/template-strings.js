@@ -6,9 +6,14 @@
 // }
 
 function getMessage() {
-  const year = new Date().getFullYear();
-
-  return `This year is ${year}`;
+  return `This year is ${new Date().getFullYear()}`;
 }
 
 getMessage(); //?
+
+// Coding Exercise 1 - Templete Strings in Practice
+function doubleMessage(number) {
+  return `Your number doubled is ${2 * number}`;
+}
+
+doubleMessage(5); //?
