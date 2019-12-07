@@ -17,3 +17,8 @@ function doubleMessage(number) {
 }
 
 doubleMessage(5); //?
+
+// Coding Exercise 2 - Name Helpers
+function fullName(firstName, lastName) {
+  return `${firstNam} ${lastName}`;
+}
