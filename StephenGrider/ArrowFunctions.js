@@ -28,3 +28,13 @@ const fibonacci = n => {
 };
 
 fibonacci(5); //?
+
+// Coding Exercise 2 - Arrow Functions Aren't Always a Solution
+const profile = {
+  name: 'Alex',
+  getName: () => {
+    return this.name;
+  }
+};
+
+profile.getName() //?
