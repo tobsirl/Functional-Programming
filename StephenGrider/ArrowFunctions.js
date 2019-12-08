@@ -20,3 +20,11 @@ const team = {
 };
 
 team.teamSummary(); //?
+
+// Coding Exercise 1 - Refactoring Keyword Functions
+const fibonacci = n => {
+  if (n < 3) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+fibonacci(5); //?
