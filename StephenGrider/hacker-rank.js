@@ -1,44 +1,3 @@
-// ES5
-// const double = function(number) {
-//   return 2 * number;
-// };
-
-// ES6
-const double = number => 2 * number;
-
-double(8);
-
-// ES6
-const team = {
-  members: ['Jane', 'Bill'],
-  teamName: 'Super Squad',
-  teamSummary: function() {
-    return this.members.map(member => {
-      return `${member} is on team ${this.teamName}`;
-    });
-  }
-};
-
-team.teamSummary(); //?
-
-// Coding Exercise 1 - Refactoring Keyword Functions
-const fibonacci = n => {
-  if (n < 3) return 1;
-  return fibonacci(n - 1) + fibonacci(n - 2);
-};
-
-fibonacci(5); //?
-
-// Coding Exercise 2 - Arrow Functions Aren't Always a Solution
-const profile = {
-  name: 'Alex',
-  getName: function() {
-    return this.name;
-  }
-};
-
-profile.getName(); //?
-
 function plusMinus(arr) {
   const length = arr.length;
   let pos = 0;
@@ -96,7 +55,29 @@ function birthdayCakeCandles(ar) {
   // return ar.map(x => (count[x] = (count[x] || 0) + 1));
   let tallest = Math.max(...ar); //?
 
-  return ar.filter(num => num == tallest).length; 
+  return ar.filter(num => num == tallest).length;
 }
 
 birthdayCakeCandles([3, 2, 1, 3]); //?
+
+// Grading Students
+function gradingStudents(grades) {
+  let newGrades = [];
+  // Write your code here
+  grades.map(grade => {
+    if (grade < 38) {
+      newGrades.push(grade);
+    } else if (Math.ceil(grade / 5) * 5 - grade < 3) {
+      newGrades.push(Math.ceil(grade / 5) * 5);
+    } else if (Math.ceil(grade / 5) * 5 - grade === 3) {
+      newGrades.push(grade);
+    }
+  });
+  return newGrades;
+
+  // return grades.map(grade =>
+  //   grade < 38 || grade % 5 < 3 ? grade : Math.ceil(grade / 5) * 5
+  // );
+}
+
+gradingStudents([73, 67, 38, 33]); //?
