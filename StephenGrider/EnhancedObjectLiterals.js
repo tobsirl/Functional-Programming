@@ -21,8 +21,13 @@ const bookshop = createBookShop(inventory);
 bookshop.inventoryValue(); //?
 bookshop.priceForTitle('Eloquent JavaScript'); //?
 
-// Coding Exercise 1 - Multiple Properties with Enhanced Notation 
+// Coding Exercise 1 - Multiple Properties with Enhanced Notation
 const red = '#ff0000';
 const blue = '#0000ff';
 
 const COLORS = { red, blue };
+
+// Coding Exercise 2 - Condensing Code with Enhanced Literals
+const fields = ['firstName', 'lastName', 'phoneNumber'];
+
+const props = { fields };
