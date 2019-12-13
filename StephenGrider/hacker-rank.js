@@ -81,3 +81,22 @@ function gradingStudents(grades) {
 }
 
 gradingStudents([73, 67, 38, 33]); //?
+
+// Divisable sum pair
+function divisibleSumPairs(n, k, ar) {
+  // return ar.reduce((acc, prev) => {
+  //   return acc + prev / k;
+  // });
+  let pairs = 0;
+
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if ((ar[i] + ar[j]) % k === 0) {
+        pairs++;
+      }
+    }
+  }
+  return pairs;
+}
+
+divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]); //?

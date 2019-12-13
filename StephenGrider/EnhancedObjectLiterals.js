@@ -20,3 +20,9 @@ const bookshop = createBookShop(inventory);
 
 bookshop.inventoryValue(); //?
 bookshop.priceForTitle('Eloquent JavaScript'); //?
+
+// Coding Exercise 1 - Multiple Properties with Enhanced Notation 
+const red = '#ff0000';
+const blue = '#0000ff';
+
+const COLORS = { red, blue };
