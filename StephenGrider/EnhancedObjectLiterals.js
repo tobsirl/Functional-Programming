@@ -31,3 +31,12 @@ const COLORS = { red, blue };
 const fields = ['firstName', 'lastName', 'phoneNumber'];
 
 const props = { fields };
+
+// Coding Exercise 3 - Literals in Functions
+const canvasDimensions = function(width, initialHeight) {
+  const height = initialHeight * 9 /16;
+  return { 
+    width, 
+    height 
+  };
+}
