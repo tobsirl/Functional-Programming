@@ -1,8 +1,6 @@
-// ES5
-function makeAjaxRequest(url, method) {
-  if(!method) {
-    method = 'GET'
-  }
+// ES6
+function makeAjaxRequest(url, method = 'GET') {
+
 
   // logic to make the request
 }
