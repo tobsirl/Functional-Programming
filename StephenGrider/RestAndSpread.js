@@ -49,3 +49,10 @@ function product(...nums) {
 }
 
 product(1, 2, 3, 4, 5, 6); //?
+
+// Exercise 2 - Spreadin' Arrays
+function join(array1, array2) {
+  return [...array1, ...array2];
+}
+
+join([1, 2, 3], [4, 5, 6]); //?
