@@ -38,3 +38,14 @@ const MathLibrary = {
     return a * b;
   }
 };
+
+// Exercise 1 - Many Many Arguments
+function product(...nums) {
+  const numbers = [...nums];
+
+  return numbers.reduce((acc, number) => {
+    return acc * number;
+  }, 1);
+}
+
+product(1, 2, 3, 4, 5, 6); //?
