@@ -1,3 +1,4 @@
+import p from 'p';
 // Rest
 function addNumbers(...numbers) {
   return numbers.reduce((sum, number) => sum + number);
@@ -56,3 +57,10 @@ function join(array1, array2) {
 }
 
 join([1, 2, 3], [4, 5, 6]); //?
+
+// Exercise 3 - Mixing Rest and Spread
+function unshift(array, ...letters) {
+  return letters.concat(array); 
+}
+
+unshift([p, a, u, l], t, o, b, i, n); //?
