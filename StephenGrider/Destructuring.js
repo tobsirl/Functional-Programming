@@ -12,3 +12,17 @@ const { type, amount } = expense;
 
 type 
 amount 
+
+// Destructuring Arguments Object
+// ES5
+var savedFiled = {
+  extension: '.jpg',
+  name: 'repost',
+  size: 14040
+}
+
+function fileSummary(file) {
+  return `The file ${file.name}${file.extension} is of size ${file.size}`
+}
+
+fileSummary(savedFiled) //?
