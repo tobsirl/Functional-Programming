@@ -21,8 +21,15 @@ var savedFiled = {
   size: 14040
 }
 
-function fileSummary(file) {
-  return `The file ${file.name}${file.extension} is of size ${file.size}`
+// function fileSummary(file) {
+//   return `The file ${file.name}${file.extension} is of size ${file.size}`
+// }
+
+// fileSummary(savedFiled) //?
+
+// ES6
+function fileSummary({name, extension, size}) {
+  return `The file ${name}${extension} is of size ${size}`
 }
 
 fileSummary(savedFiled) //?
