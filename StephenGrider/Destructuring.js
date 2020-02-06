@@ -70,3 +70,10 @@ const [{ location }] = companies;
 
 location;
 
+const Google = {
+  offices: ['Mountain View', 'New York', 'London']
+};
+
+const { offices: [office] } = Google;
+
+office;
