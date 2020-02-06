@@ -19,7 +19,7 @@ var savedFiled = {
   extension: '.jpg',
   name: 'repost',
   size: 14040
-}
+};
 
 // function fileSummary(file) {
 //   return `The file ${file.name}${file.extension} is of size ${file.size}`
@@ -28,8 +28,31 @@ var savedFiled = {
 // fileSummary(savedFiled) //?
 
 // ES6
-function fileSummary({name, extension, size}) {
-  return `The file ${name}${extension} is of size ${size}`
+function fileSummary({name, extension, size}, {color}) {
+  return `The file ${name}${extension} is of size ${size} ${color}`
 }
 
-fileSummary(savedFiled) //?
+fileSummary(savedFiled, {color: 'red'}) //?
+
+// Destructuring Arrays
+const companies = [
+  'Goggle',
+  'Facebook',
+  'Uber'
+];
+
+// Order matters
+const [ name, name2, name3 ] = companies;
+
+name
+name2
+name3
+
+const { length } = companies;
+
+length
+
+const [company, ...rest] = companies;
+
+company
+rest
