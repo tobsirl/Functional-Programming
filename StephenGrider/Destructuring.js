@@ -8,18 +8,18 @@ var expense = {
 // var amount = expense.amount;
 
 // ES6
-const { type, amount } = expense;
+// const { type, amount } = expense;
 
-type 
-amount 
+// type
+// amount
 
-// Destructuring Arguments Object
-// ES5
-var savedFiled = {
-  extension: '.jpg',
-  name: 'repost',
-  size: 14040
-};
+// // Destructuring Arguments Object
+// // ES5
+// var savedFiled = {
+//   extension: '.jpg',
+//   name: 'repost',
+//   size: 14040
+// };
 
 // function fileSummary(file) {
 //   return `The file ${file.name}${file.extension} is of size ${file.size}`
@@ -28,31 +28,45 @@ var savedFiled = {
 // fileSummary(savedFiled) //?
 
 // ES6
-function fileSummary({name, extension, size}, {color}) {
-  return `The file ${name}${extension} is of size ${size} ${color}`
-}
+// function fileSummary({name, extension, size}, {color}) {
+//   return `The file ${name}${extension} is of size ${size} ${color}`
+// }
 
-fileSummary(savedFiled, {color: 'red'}) //?
+// fileSummary(savedFiled, {color: 'red'}) //?
 
-// Destructuring Arrays
-const companies = [
-  'Goggle',
-  'Facebook',
-  'Uber'
-];
+// // Destructuring Arrays
+// const companies = [
+//   'Goggle',
+//   'Facebook',
+//   'Uber'
+// ];
 
 // Order matters
-const [ name, name2, name3 ] = companies;
+// const [ name, name2, name3 ] = companies;
 
-name
-name2
-name3
+// name
+// name2
+// name3
 
-const { length } = companies;
+// const { length } = companies;
 
-length
+// length
 
-const [company, ...rest] = companies;
+// const [company, ...rest] = companies;
 
-company
-rest
+// company
+// rest
+
+const companies = [
+  { name: 'Google', location: 'Mountain View' },
+  { name: 'Facebook', location: 'Menlo Park' },
+  { name: 'Uber', location: 'San Francisco' }
+];
+
+// var location = companies[0].location;
+// location;
+
+const [{ location }] = companies;
+
+location;
+
