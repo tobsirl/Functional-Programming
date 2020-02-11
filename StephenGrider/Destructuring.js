@@ -57,23 +57,41 @@ var expense = {
 // company
 // rest
 
-const companies = [
-  { name: 'Google', location: 'Mountain View' },
-  { name: 'Facebook', location: 'Menlo Park' },
-  { name: 'Uber', location: 'San Francisco' }
-];
+// const companies = [
+//   { name: 'Google', location: 'Mountain View' },
+//   { name: 'Facebook', location: 'Menlo Park' },
+//   { name: 'Uber', location: 'San Francisco' }
+// ];
 
-// var location = companies[0].location;
+// // var location = companies[0].location;
+// // location;
+
+// const [{ location }] = companies;
+
 // location;
 
-const [{ location }] = companies;
+// const Google = {
+//   offices: ['Mountain View', 'New York', 'London']
+// };
 
-location;
+// const { offices: [office] } = Google;
 
-const Google = {
-  offices: ['Mountain View', 'New York', 'London']
+// office;
+
+function signup({ username, password, email, dateOfBirth, city }) {
+  // create a new user
+  return `${username}, ${password}, ${email}, ${dateOfBirth}, ${city}`;
+}
+
+const user = {
+  username: 'myname',
+  password: 'mypassword',
+  email: 'myemail@gmail.com',
+  dateOfBirth: '1/1/1990',
+  city: 'New York'
 };
 
-const { offices: [office] } = Google;
+// signup('myname', 'mypassword', 'myemail@gmail.com', '1/1/1990', 'New York');
 
-office;
+// pass as object
+signup(user); //?
