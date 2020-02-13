@@ -78,20 +78,30 @@ var expense = {
 
 // office;
 
-function signup({ username, password, email, dateOfBirth, city }) {
-  // create a new user
-  return `${username}, ${password}, ${email}, ${dateOfBirth}, ${city}`;
-}
+// function signup({ username, password, email, dateOfBirth, city }) {
+//   // create a new user
+//   return `${username}, ${password}, ${email}, ${dateOfBirth}, ${city}`;
+// }
 
-const user = {
-  username: 'myname',
-  password: 'mypassword',
-  email: 'myemail@gmail.com',
-  dateOfBirth: '1/1/1990',
-  city: 'New York'
-};
+// const user = {
+//   username: 'myname',
+//   password: 'mypassword',
+//   email: 'myemail@gmail.com',
+//   dateOfBirth: '1/1/1990',
+//   city: 'New York'
+// };
 
-// signup('myname', 'mypassword', 'myemail@gmail.com', '1/1/1990', 'New York');
+// // signup('myname', 'mypassword', 'myemail@gmail.com', '1/1/1990', 'New York');
 
-// pass as object
-signup(user); //?
+// // pass as object
+// signup(user); //?
+
+const points = [
+  [4, 5],
+  [10, 1],
+  [0, 40]
+];
+
+points.map(([x, y]) => {
+  return { x, y }; //?
+});
