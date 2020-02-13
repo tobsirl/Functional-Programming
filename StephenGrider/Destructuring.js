@@ -105,3 +105,13 @@ const points = [
 points.map(([x, y]) => {
   return { x, y }; //?
 });
+
+// Coding Exercise 1 - Destructuring in Practice
+const profile = {
+  title: 'Engineer',
+  department: 'Engineering'
+};
+
+function isEngineer({ title, department }) {
+  return title === 'Engineer' && department === 'Engineering';
+}
