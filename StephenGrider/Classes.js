@@ -38,7 +38,23 @@ class Car {
   }
 }
 
+class Toyota extends Car {
+  constructor(options) {
+    super(options); // Car.constructor
+    this.color = options.color;
+  }
+
+  honk() {
+    return 'honk';
+  }
+}
+
 const car = new Car({ title: 'Ford' });
 
 car;
 car.drive(); //?
+
+const toyota = new Toyota({ title: 'Scarlet', color: 'Silver' });
+toyota;
+toyota.drive(); //?
+toyota.honk(); //?
