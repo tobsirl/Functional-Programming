@@ -58,3 +58,15 @@ const toyota = new Toyota({ title: 'Scarlet', color: 'Silver' });
 toyota;
 toyota.drive(); //?
 toyota.honk(); //?
+
+// Coding Exercise 1 - Game Classes
+class Monster {
+  constructor(options) {
+    this.name = options.name;
+    this.health = 100;
+  }
+}
+
+const wolf = new Monster({ name: 'fang' });
+
+wolf;
