@@ -67,6 +67,16 @@ class Monster {
   }
 }
 
-const wolf = new Monster({ name: 'fang' });
+// Coding Exercise 2 - Subclassing Monsters
+class Monster {
+  constructor(options) {
+    this.health = 100;
+    this.name = options.name;
+  }
+}
 
-wolf;
+class Snake extends Monster {
+  bite() {
+    
+  }
+}
